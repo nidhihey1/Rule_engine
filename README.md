@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/17449362/README.md)
 
 # Rule Engine with Abstract Syntax Tree (AST)
 
@@ -11,10 +10,17 @@ This project implements a rule engine to determine user eligibility based on att
 3.Project Structure   
 4.Dependencies    
 5.Setup and Running       
-6.Running Locally     
-7.Running with Docker     
+6.Running Locally          
 8.Examples    
 9.Security Considerations
+
+## Project Structure
+ #### Main.java:
+ Contains test cases for creating and evaluating rules.
+ #### Node.java:
+ Defines the structure of AST nodes used to represent rules.
+ #### RuleEngine.java:
+ Contains logic to parse rule strings into ASTs, combine ASTs, and evaluate rules against user data.
 
 
 
@@ -46,10 +52,8 @@ MySQL (Optional): Persistence for rules and user data.
 1. **Java Development Kit (JDK 11 or higher)**:  
    - Download JDK from the official website: [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-2. **Docker & Docker Compose**:  
-   - Install Docker: [Docker Installation Guide](https://docs.docker.com/get-docker/)
-   - Install Docker Compose: [Docker Compose Installation](https://docs.docker.com/compose/install/)
-   
+2. **Visual Studio Code:**:  
+   - Install VS Code: [VS Code official website](https://code.visualstudio.com/)
 
 ## ⚙️ Setup and Running
 
@@ -70,19 +74,6 @@ javac src/*.java
 java -cp src Main
 
 ```
-## Running with Docker
-### Build Docker Image:
-
-```bash
-docker build -t rule-engine-app .
-```
-### Run the application with Docker Compose:
-```bash
-docker-compose up
-```
-
-
-
 ## 📊 Examples
 ### Example 1: Simple Rule Evaluation
 
